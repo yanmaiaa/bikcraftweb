@@ -12,6 +12,5 @@
 
 <h2><strong>Grid.css:</strong></h2><br>
  Pré-setados antes de iniciar o código hmtl com valores do tamanho das grids, o que deixou o posicionamento dos elementos mais fácil de ser feito.<br>
-<h3><strong>Obs.: Os estilos foram separados em 3 arquivos de css além do styled.css de forma proposital para deixar o entendimento do que foi feito de forma mais clara.</strong></h3>
-
+<p><strong>Obs.: Os estilos foram separados em 3 arquivos de css além do styled.css de forma proposital para deixar o entendimento do que foi feito de forma mais clara.</strong></p><br>
 ![](.github/bikcraft_gif.gif)
