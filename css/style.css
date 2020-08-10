@@ -1,13 +1,16 @@
+/*Estilos Gerais. Se quisermos algo diferente para alguns dos elementos daqui
+precisaremos usar uma class pra nao adotar esse estilo*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 p{ 
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 14px;
-  line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
   }
 
-.btn{ 
+.btn{ /*Só a margem que vamos ter que colocar especifica em cada botão, pois cada
+  um tem uma diferente. Aqui só colocaremos o estilo geral*/
   border: 3px solid #FEC63E;
   padding: 10px 30px;
   color: #FEC63E;
@@ -26,63 +29,85 @@ p{
   border-color: #000;
 }
 .subtitulo{
-  font-weight: bold;
   font-size: 24px;
-  line-height: 30px;
-  letter-spacing: .1em;
-  color: #000;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 40px;
-  }
-  .subtitulo::after{
+	line-height: 30px;
+	font-weight: bold;
+	letter-spacing: .1em;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.subtitulo::after{
   content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #000;
-  margin: 8px auto; 
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 8px auto;
+}
+.subtitulo-interno{
+  font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	letter-spacing: .1em;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 20px;
   }
-img{ 
-  display: block;
+  .subtitulo-interno::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px 0;
+  }
+img{ /*Para que todas as imagens se comportem como elementos de bloco
+  pois vai tirar uma margem que elas tem embaixo e facilita o trabalho*/
+display: block;
 }
 
 /*Header*/
 .header {
-  position: fixed; 
-  top: 0; 
+  position: fixed; /*O menu fica fixo enquanto scrollamos*/
+  top: 0; /*Para que ele fique sempre no topo*/
   width: 100%;
   background: #FEC63E; 
-  padding: 15px 0;
-  z-index: 10; 
+  padding: 15px 0;/*Pra tirar do topo*/
+  z-index: 10; /*Quando elementos tem position, para ver qual fica em cima
+  de qual ao scrollarmos a pg, usamos isso*/
 }
 .header_menu{
   text-align: right;
 }
-.header_menu ul li{ 
+.header_menu ul li{ /*Vamos transformar o menu em um elemento em linha*/
   display: inline-block;
   margin-left: 25px;
   margin-top: 20px;
 }
-.header_menu ul li a{ 
+.header_menu ul li a{ /*Estamos falando com o "a" que é o último, assim como o de cima*/
  color: #000;
  font-weight: bold;
  text-transform: uppercase;
  letter-spacing: .1em;
  font-size: 14px;
  line-height: 20px;
- padding: 10px 0;
+ padding: 10px 0;/*Para aaumentar a área de contato no momento em que o mouse estiver focando no item do menu
+ */
 }
-.header_menu ul li a:hover{ 
+.header_menu ul li a:hover{ /*Para mudar de cor quando passar o mouse por cima*/
 color: #fff;
 }
-
 /*Introdução*/
 .introducao{
   width: 100%;
   height: 380px;
   background: url("../img/background.jpg") no-repeat center;
-  background-size: cover; 
+  background-size: cover; /*Para cobrir inteiro. Ele vai ficar por cima
+  pois a estrutura do header tá fixed e por isso o conteúdo que vier
+  abaixo dela vai ignorá-la e ai vai subir, para isso daremos uma margem 
+  do tamanho exato do header*/
   margin-top: 92px;
   text-align: center;
   padding-top: 80px;
@@ -94,21 +119,26 @@ color: #fff;
   text-transform: uppercase;
 }
 .quote-externo{
-  max-width: 320px;
-  margin: 0 auto; 
+  max-width: 320px;/*Não vai crescer mais que isso*//*Para limitar o tamanho do texto 
+  sem precisar usar um br para quebrar linha*/
+  margin: 0 auto; /*Para alinhar ao centro novamente nao vai usar o text-align pois
+  foi colocada uma distancia padrao nele*/
   color: #fff;
-  margin-bottom: 40px; 
+  margin-bottom: 40px; /*Margem do botão*/
 }
 .quote-externo p {
   font-style: italic;
 }
-.quote-externo p::before, .quote-externo p::after{ 
-content:"" ; 
+.quote-externo p::before, .quote-externo p::after{ /*Usaremos uma pseudo-class para criar as linhas de cima e de baixo*/
+content:"" ; /*Esse é um conteúdo de estilo que só está dentro do css, nao no html
+so que sem nada dentro para criar ele pelo menos*/
+/*Por padrão criar um elemento inline*/
 display: block;
 width: 60px;
 height: 3px;
 background: #fff;
-margin: 14px auto 10px auto; 
+margin: 14px auto 10px auto; /*Cima = 14px, direita = auto e assim por diante*/
+/*Muito usado quando queremos alguma coisa da interface que pareça um elemento*/
 }
 .quote-externo cite{
   font-style: normal;
@@ -116,13 +146,37 @@ margin: 14px auto 10px auto;
   font-size: 14px;
   letter-spacing: .1em;
 }
+/*Estilo geral para sabermos em qual lugar da pagina estamos (O nome fica com cor diferente)*/
+.header_menu ul li a.menu_ativo{ /*Coloca o caminho especifico dele detalhado*/
+  color: #fff;
+}
+/*Introdução Interna*/
+.introducao-interna{ /*Vai ser a mesma para todos, só vai mudar o background, por isso será feito aqui*/
+width: 100%;
+margin-top: 92px;
+height: 160px;
+background-size: cover;
+color: #fff;
+text-align: center;
+padding-top: 30px;
+}
+.introducao-interna h1{ 
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
 
+.introducao-interna h1::after{ /*Para o pseudo-elemento embaixo do nome*/
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 6px auto 10px auto;
+}
 /*Produtos*/
 .produtos{
   padding: 60px 0;
-}
-.produtos_lista li h3:hover {
-color: #fff;
 }
 .produtos_lista li{
 background: #FEC63E;
@@ -175,7 +229,7 @@ text-align: center;
 .portfolio .subtitulo::after{
   background:#FEC63E;
 }
-.portfolio_lista li:last-child{ 
+.portfolio_lista li:last-child{ /*Para seleciona o último item que é a imagem*/
   margin-top: 20px;
 }
 .portfolio .call p{
@@ -191,16 +245,20 @@ width: 634px;
 height: 83px;
 display: block;
 background: url("../img/linhas.svg") no-repeat center;
-position: absolute;
+position: absolute;/*Para posicionar usamos o position absolute. Relativo ao container 
+todo que ele pega*/
 top: 209px;
 right: 162px;
-z-index: -1; 
+z-index: -1; /*Para garantir que esse elemento vai ficar por tras de tudo*/
 }
 .qualidade img{
-  margin: 0 auto; 
+  margin: 0 auto; /*Zero para cima e para baixo e calcula a distância que tem
+  quando colocamos auto*/
 }
 .qualidade_lista{
 padding-top: 20px;
+ overflow: auto;/*Pra dá o clear nos elementos e não ficar nenhum em cima do outro.
+Por isso fazemos uma limpeza no clear float da pagina sobre. É o clear-fix*/
 }
 .qualidade_lista li{
   text-align: center;
@@ -234,6 +292,7 @@ padding-top: 20px;
     max-width: 400px;
     padding-top: 40px;
   }
+
   /*Footer*/
   .footer{
     width: 100%;
@@ -241,8 +300,7 @@ padding-top: 20px;
     color:#fff;
     padding: 20px 0;
   }
-  /*Estilizamos todos os h3, assim, aplicamos nele de forma geral para 
-  todos que estão dentro do footer*/
+  
   .footer h3{
     font-size: 18px;
     line-height: 25px;
@@ -251,8 +309,7 @@ padding-top: 20px;
     letter-spacing: .1em;
     font-weight: bold;
   }
-  /*Agora criamos o pseudo-elemento after dentro do h3, ppois ele está sendo
-  usado lá*/
+  
   .footer h3::after{
     content: "";
     display: block;
@@ -270,10 +327,9 @@ padding-top: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   .footer_redes ul li{ 
-    display: inline-block;/*Ficam em forma de lista, por isso usamos pra tirar*/
+    display: inline-block;
     margin-right: 10px;
   }
-  /*Falaremos com o a pois queremos que a parte inteira dele seja clicável*/
   .footer_redes ul li a{
     border: 3px solid #FEC63E;
     display: block;
