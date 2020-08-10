@@ -9,7 +9,6 @@
   line-height: 25px;
   margin-bottom: 1em; 
   padding-right: 60px;
-
 }
 .missao_sobre ul li {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -17,5 +16,8 @@
   line-height: 25px;
 }
 .foto-equipe{
-  padding-top: 20px; 
+  padding-top: 20px;
+}
+.qualidade_lista h3:hover{
+  color:  #FEC63E;
 }
