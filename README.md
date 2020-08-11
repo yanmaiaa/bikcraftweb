@@ -1,9 +1,8 @@
 
-#bikcraftweb
+bikcraftweb
  Webpage Project
 
 <b>Webpage construída para entendimento da dinâmica de funcionamento do normalize.css, reset.css (Muito utilizados há alguns anos) e o grid.css.</b>
-
 <h2><b>Normalize.css:</b></h2><br>
  Utilizado para adá consistência à forma como os elementos são apresentados
 
