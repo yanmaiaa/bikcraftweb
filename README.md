@@ -1,5 +1,5 @@
 
-<h1>bikcraftweb</h1><br>
+<h1>bikcraftweb</h1>
  <h2>Webpage Project</h2>
 
 Webpage construída para entendimento da dinâmica de funcionamento do normalize.css, reset.css (Muito utilizados há alguns anos) e o grid.css.
