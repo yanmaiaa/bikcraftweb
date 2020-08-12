@@ -26,3 +26,7 @@ Webpage construída para entendimento da dinâmica de funcionamento do normalize
 <h2><b>Página Portfólio<b></h2><br>
 
 ![](.github/bikcraft_portfolio.gif)
+
+<h2><b>Página Contato<b></h2><br>
+
+![](.github/bikcraft_contato.gif)
