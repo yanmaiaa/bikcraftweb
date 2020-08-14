@@ -69,4 +69,26 @@ text-align: center;
 	.qualidade::after{
 		display: none; 
 	}
+	/*Introduçao Interna*/
+	.introducao-interna{ 
+		margin-top: 0px; /*Tirar a margem da imagem*/
+	}
+	/*Sobre*/
+	.missao_sobre p{
+		padding-right: 0px; /*Tirar a margem do p*/
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.missao_sobre ul li{
+		font-size: 14px;
+		line-height: 25px;
+	}
+	/*Subtitulo*/
+	.subtitulo-interno {
+		font-size: 18px;
+	}
+	.subtitulo-interno::after{
+		width: 40px;
+		height: 2px;
+	}
 }
