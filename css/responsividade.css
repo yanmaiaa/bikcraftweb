@@ -27,9 +27,18 @@
 .produto_icone{
  padding: 41px 0;
 }
+.produtos_lista li{
+	height: 320px;
+	}
+.produtos ul li h3 {
+	padding-top: 2px;
+}
+.produtos ul li p {
+	padding: 10px;
+}
 .produto_info p{
- font-size: 14px;
-  line-height: 20px;
+  font-size: 14px;
+	line-height: 20px;
   height: 122px; 
 	padding: 20px 30px;
 }
