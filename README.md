@@ -11,7 +11,7 @@ pertinentes à construção de aplicações Web que utilizam html, css e javascr
 
 <h2><b>Grid.css:</b></h2>
  <p>Pré-setados antes de iniciar o código hmtl com valores do tamanho das grids, o que deixou o posicionamento dos elementos mais fácil de ser feito.<p><br>
-<p><b>Obs.: Os estilos foram separados em arquivos de css diferentes além do styled.css, que contém os estilos da página inicial e alguns estilos comuns para todas as páginas de forma proposital para deixar o entendimento do que foi feito mais claro, porém, ao final do projeto tudo será colocado em apenas um css.</b></p><br>
+<p><b>Obs.: Os estilos foram separados em arquivos de css diferentes além do styled.css, que contém os estilos da página inicial e alguns estilos comuns para todas as páginas de forma proposital para deixar o entendimento do que foi feito mais claro, porém, ao final do projeto tudo foi colocado em apenas um css para deixar o website mais otimizado se levarmos em consideração o que é aplicado na realidade.</b></p><br>
 <h2><b>Página Inicial</b></h2><br>
 
 ![](.github/bikcraft_inicial.gif)
@@ -40,4 +40,4 @@ pertinentes à construção de aplicações Web que utilizam html, css e javascr
 
 ![](.github/responsividade-mobile.gif)<br>
 
-<p>OBS.: Ao final da aplicação foram implementadas animações em algumas páginas utilizando um arquivo javascript trabalhado nas aulas do André Rafael, professor da Origamid.</p>
+<p>OBS.: Ao final da aplicação foram implementadas animações nas páginas utilizando um arquivo javascript além de implementação das tags meta na head referentes ao SEO, que em suma, servirá para otimizar o site para os mecanismos de busca, o que é muito utilizado.</p>
